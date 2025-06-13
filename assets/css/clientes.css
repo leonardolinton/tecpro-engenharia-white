@@ -1,0 +1,146 @@
+/* Clientes */
+
+
+/* clientes Section */
+.clientes {
+  background-color: var(--color-02);
+}
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.client-card {
+  background-color: var(--color-01);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.client-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(255, 102, 0, 0.1);
+}
+
+.client-logo {
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-03);
+  transition: var(--transition);
+}
+
+.client-card:hover .client-logo {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.client-card h3 {
+  font-size: 2rem;
+  margin: 2rem 2rem 1rem;
+}
+
+.project-name {
+  color: var(--color-03);
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0 2rem 1.5rem;
+}
+
+.client-link {
+  display: inline-block;
+  margin: 0 2rem 2rem;
+  color: var(--color-03);
+  font-weight: 600;
+  position: relative;
+}
+
+.client-link::after {
+  content: '→';
+  margin-left: 5px;
+  transition: var(--transition);
+}
+
+.client-link:hover::after {
+  margin-left: 10px;
+}
+
+
+.carousel-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: transparent;
+   border-radius: 5px;
+}
+
+.carousel {
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.carousel-slide p {
+    font-weight: 600;
+    color: var(--color-04);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--color-03);
+    color: var(--color2);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.prev {
+    left: -20px;
+}
+
+.carousel-button.next {
+    right: -20px;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-button{
+    display: none;
+  }
+}

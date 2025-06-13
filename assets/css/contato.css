@@ -1,0 +1,122 @@
+
+/* contato Section */
+#contato p{
+  color: var(--color-04);
+}
+
+.contato-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.contato-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-02);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+}
+
+.contato-form-container h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-01);
+  border: 1px solid var(--color-01);
+  color: var(--color-04);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.6rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-03);
+  outline: none;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contato-info h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  align-items: flex-start;
+}
+
+.info-icon {
+  background-color: rgba(255, 165, 0, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-content h4 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-content p {
+  color: var(--color-04);
+}
+
+.info-item h4{
+  color: var(--color-03);
+}
+
+.hours-box {
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.hours-box h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-03);
+}
+
+.hours-box ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}

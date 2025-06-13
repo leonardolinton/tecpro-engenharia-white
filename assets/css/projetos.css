@@ -1,0 +1,99 @@
+#projetos p{
+  color: var(--color-04);
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.project-card {
+  background-color: var(--color-02);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  opacity: 0;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  color: var(--color-01);
+  margin-bottom: 4px;
+}
+
+.project-overlay p {
+  margin-bottom: 16px;
+}
+
+.project-info {
+  padding: 24px;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--color-04);
+  transition: var(--transition);
+}
+
+.project-card:hover .project-info h3 {
+  color: var(--color-03);
+}
+
+.project-info p {
+  color: var(--color-04);
+}
+
+
+
+@media (max-width: 980px) {
+  .projetos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .projetos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
