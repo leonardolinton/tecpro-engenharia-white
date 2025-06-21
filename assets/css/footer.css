@@ -1,7 +1,7 @@
 
 /* Footer */
 .footer {
-  background-color: var(--color-01);
+  background-color: var(--color-02);
   padding: 5rem 0 2rem;
   color: var(--color-04);
 }
@@ -15,12 +15,12 @@
 
 .footer-info h3 {
   font-size: 2.4rem;
-  color: var(--color-04);
+  color: var(--color-03);
 }
 
 .footer .footer-info p {
   margin-bottom: 2rem;
-  color: var(--color-04);
+  color: var(--color-01);
 }
 
 .social-links {
@@ -47,6 +47,7 @@
 .footer-links h4 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  color: var(--color-03);
 }
 
 .footer-links ul {
@@ -56,17 +57,18 @@
 }
 
 .footer-links a {
-  color: var(--color-04);
+  color: var(--color-01);
 }
 
 .footer-links a:hover {
-  color: var(--primary-color);
+  color: var(--color-04);
 }
 
 
 .footer-contato h4 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  color: var(--color-03);
 }
 
 .footer-contato address {
@@ -75,7 +77,12 @@
 
 .footer .footer-contato p {
   margin-bottom: 0.8rem;
-  color: var(--color-04);
+  color: var(--color-01);
+}
+
+.footer .footer-contato p span{
+  font-weight: 700;
+  color: var(--color-01);
 }
 
 .footer .footer-bottom {

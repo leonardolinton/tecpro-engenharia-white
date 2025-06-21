@@ -1,0 +1,132 @@
+#projetos-detalhes{
+    background-color: var(--color-01);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#projetos-detalhes .section-header p{
+    color: var(--color-02);
+}
+
+#projetos-detalhes .projeto-container{
+    display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+  gap: 20px; /* Espaçamento entre colunas (opcional) */
+
+}
+
+.section-header-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-voltar{
+    margin: 5rem 0;
+    padding: 2rem;
+    background-color: var(--color-03);
+    border-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+    color: var(--color-01);
+}
+
+.btn-voltar:hover{
+    transform: scale(1.1);
+    color: var(--color-04);
+}
+
+.projeto-detalhe {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+    background-color: var(--color-03);
+}
+
+.projeto-detalhe:hover {
+    transform: translateY(-5px);
+}
+
+.projeto-img{
+    width: 100%;
+    height: 250px;
+}
+
+.projeto-detalhe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projeto-info {
+    padding: 2rem;
+}
+
+.projeto-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--color-01);
+}
+
+#projetos-detalhes .projeto-info p {
+    color: var(--color-04);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.projeto-specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--cinza-claro);
+}
+
+.spec-item {
+    text-align: center;
+}
+
+.spec-item strong {
+    display: block;
+    color: var(--laranja);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.spec-item span {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.page-header {
+    background: linear-gradient(135deg, var(--cinza-claro) 0%, white 100%);
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+
+@media (max-width: 1000px) {
+
+    #projetos-detalhes .projeto-container{
+    display: grid;
+  grid-template-columns: 1fr; /* Duas colunas iguais */
+  gap: 20px; /* Espaçamento entre colunas (opcional) */
+
+}
+}

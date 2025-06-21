@@ -46,6 +46,10 @@
   margin-bottom: 0.5rem;
 }
 
+#sobre .stat-label span{
+  color: var(--color-01);
+}
+
 .stat-card-number{
   display: flex;
   align-items: center;

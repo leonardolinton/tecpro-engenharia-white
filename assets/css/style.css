@@ -2,8 +2,10 @@
 @import url("../css/header.css");
 @import url("../css/hero.css");
 @import url("../css/sobre.css");
+@import url("../css/premios.css");
 @import url("../css/servicos.css");
 @import url("../css/projetos.css");
+@import url("../css/projetos-detalhes.css");
 @import url("../css/clientes.css");
 @import url("../css/contato.css");
 @import url("../css/footer.css");
@@ -76,7 +78,7 @@ ul {
 
 .section-header h2 {
   font-size: 3.6rem;
-  margin-bottom: 2rem;
+  margin: 5rem 0;
   position: relative;
   display: inline-block;
 }
