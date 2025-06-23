@@ -396,11 +396,6 @@ ul {
     font-size: 1.8rem;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
   .section-header {
     margin-bottom: 4rem;
   }
