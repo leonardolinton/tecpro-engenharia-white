@@ -56,3 +56,12 @@
 .service-card p {
   color: rgba(247, 255, 247, 0.8);
 }
+
+
+@media (max-width: 480px) {
+  #servicos{
+
+    background-attachment:scroll;
+
+  }
+}
