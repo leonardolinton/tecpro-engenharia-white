@@ -119,6 +119,9 @@
 
 .hours-box ul li {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 1rem;
+}
+
+.hours-box ul li span{
+  font-weight: 600;
 }
