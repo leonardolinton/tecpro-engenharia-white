@@ -11,12 +11,14 @@
 }
 
 .contato-form-container {
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: var(--color-02);
   border-radius: var(--border-radius);
   padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contato-form-container h3 {

@@ -31,6 +31,7 @@
     border-radius: 0.5rem;
     transition: 0.3s ease-in-out;
     color: var(--color-01);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .btn-voltar:hover{
@@ -44,7 +45,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     transition: transform 0.3s ease;
-    background-color: var(--color-03);
+    background-color: var(--color-02);
 }
 
 .projeto-detalhe:hover {
@@ -69,11 +70,11 @@
 .projeto-info h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: var(--color-01);
+    color: var(--color-03);
 }
 
-#projetos-detalhes .projeto-info p {
-    color: var(--color-04);
+#projetos-detalhes ul {
+    color: var(--color-01);
     line-height: 1.6;
     margin-bottom: 15px;
 }

@@ -39,7 +39,7 @@
   left: 0;
   width: 100%;
   padding: 24px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background: linear-gradient(0deg,#2e2e2eed 0%, #545454d1 50%, rgba(0, 0, 0, 0) 100%);
   opacity: 0;
   transition: var(--transition);
   display: flex;
