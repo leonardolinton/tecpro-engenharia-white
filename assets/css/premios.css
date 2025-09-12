@@ -16,8 +16,7 @@
     gap: 1rem;
 }
 
-.award__card, 
-.award__card_invert {
+.award__card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
@@ -31,20 +30,18 @@
 }
 
 
-/* .award__card_invert {
+.award__card_invert {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    background-color: var(--color-01);
+    background-color: transparent;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 5px 25px rgba(18, 18, 18, 0.1);
     transition: 0.3s ease;
     position: relative;
     min-height: 200px;
-    direction: rtl;
-    background-color: transparent;
-} */
+} 
 
 .award__card:hover {
     box-shadow: 0 15px 40px var(--shadow-hover);
