@@ -11,29 +11,29 @@
 
 .awards__grid {
     display: grid;
-    gap: 0rem;
+    align-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
-.award__card {
+.award__card, 
+.award__card_invert {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* 50% para imagem, 50% para conteúdo */
     gap: 0;
     background-color: transparent;
-    border-radius: 0px;
+    border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 5px 25px rgba(18, 18, 18, 0.1);
     transition: 0.3s ease;
     position: relative;
     min-height: 200px;
-    /* Altura mínima aumentada */
 }
 
 
-.award__card_invert {
+/* .award__card_invert {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* 50% para imagem, 50% para conteúdo */
     gap: 0;
     background-color: var(--color-01);
     border-radius: 3px;
@@ -42,10 +42,9 @@
     transition: 0.3s ease;
     position: relative;
     min-height: 200px;
-    /* Altura mínima aumentada */
     direction: rtl;
     background-color: transparent;
-}
+} */
 
 .award__card:hover {
     box-shadow: 0 15px 40px var(--shadow-hover);
@@ -60,8 +59,9 @@
     /* Remove padding para usar toda a área */
     overflow: hidden;
 }
-.award__image::after{
-     content: '';
+
+.award__image::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -69,7 +69,7 @@
     height: 100%;
     background-color: rgba(255, 102, 0, 0.233);
 }
-   
+
 
 .award__img {
     width: 100%;
@@ -112,6 +112,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center
+    ;
     background-color: rgba(95, 95, 95, 0.76);
 }
 
@@ -161,9 +163,9 @@
 
 
 @media (max-width: 480px) {
-  #premios{
+    #premios {
 
-    background-attachment:scroll;
+        background-attachment: scroll;
 
-  }
+    }
 }
