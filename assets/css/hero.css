@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(../img/bg_home_02.jpg);
+  background-image: url(../img/bg_home.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(29, 29, 29, 0.582);
+  background-color: rgba(34, 34, 34, 0.582);
 }
 
 .hero-content {
